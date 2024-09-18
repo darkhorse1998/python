@@ -4,6 +4,6 @@ def validString(element: str) -> bool:
 elements = ["my", "typical", "day", "is", "awesome"]
 print(list(filter(validString, elements)))
 
-print("LAMBDA FUNCTION...")
+print("LAMBDA FUNCTION....")
 elements = ["my", "typical", "day", "is", "awesome"]
 print(list(filter(lambda x: len(x) > 5, elements)))
