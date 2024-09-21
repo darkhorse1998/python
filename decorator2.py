@@ -1,4 +1,3 @@
-
 # Decorator for validating inputs of function
 def validator(func):
     def wrapper(*args, **kwargs):
@@ -16,5 +15,6 @@ def func(x):
         c = c + i
     print(f"Function func has been executed with c = {c}")
 
-func(100)
-func(1000000)
+if __name__ == "__main__":
+    num = int(input("Enter number: "))
+    func(num)
