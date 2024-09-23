@@ -15,6 +15,7 @@ def commonLetters() -> None:
 
     commonLetters = removeSpace(setString1 & setString2)
     print(f"Common letters are : {','.join(sorted(list(commonLetters)))}")
+    print(len(list(commonLetters)))
 
 if __name__ == "__main__":
     commonLetters()

@@ -3,7 +3,8 @@ from itertools import repeat
 NUM_LIST = [5,9,1,3,6,11,27,12,1,2,3,1,2,1,21,2,1,2,1,1,2,1,2,1,1]
 
 LENGTH_NUM_LIST = len(NUM_LIST)
-SEQUENCE = [0]*1000
+SEQUENCE = [0]*(max(NUM_LIST)+1)
+
 for num in NUM_LIST:
     SEQUENCE[num]+=1
 
