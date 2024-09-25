@@ -31,3 +31,6 @@ if __name__ == "__main__":
     print(d3.getNameInUpperCase())
 
     print(demo.objectCount)
+    d1.increaseObjectCount() # class method can be called by instance
+    print(demo.objectCount)
+    print(demo.getNameInUpperCase(d1))

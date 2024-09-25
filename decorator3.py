@@ -6,6 +6,8 @@ def logger(func):
         return func(*args)
     return wrapper
 
+logger(myFunc)()
+
 @logger
 def myFunc(msg: str) -> str:
     return msg

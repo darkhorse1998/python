@@ -3,7 +3,7 @@ import string
 punctuations = string.punctuation
 digits = string.digits
 
-def validator(func) -> bool:
+def validator(func):
     def wrapper(*args, **kwargs):
         if(len(args[0]) <= 2):
             print(f"{args[0]} is invalid!")

@@ -26,9 +26,10 @@ class C(A):
 
 class D(B,C):
     def __init__(self) -> None:
+        super().__init__()
         self.name = "D"
         print("D")
-        super().__init__()
+        
 
 d = D()
 print(D.__mro__)
